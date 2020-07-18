@@ -1,0 +1,65 @@
+html, body, div, section, header, footer, ul {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 500px;
+  height: 100%;
+  line-height: 1.25;
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Alegreya', serif;
+}
+div.outer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  height: 100%;
+  width: 2800px;
+  background-image: linear-gradient(-90deg, blue, #43ce22);
+}
+div.message {
+  margin: 60px 0;
+}
+div.cog {
+  font-size: 30px;
+  height: 50px;
+  white-space: nowrap;
+  animation-name: grow;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+div.cog:nth-child(1) {
+  font-style: italic;
+  animation-delay: 1s;
+}
+div.cog:nth-child(2) {
+  animation-delay: 2s;
+}
+div.cog:nth-child(3) {
+  animation-delay: 3s;
+}
+div.cog:nth-child(4) {
+  animation-delay: 4s;
+}
+div.cog:nth-child(5) {
+  animation-delay: 5s;
+}
+div.cog:nth-child(6) {
+  animation-delay: 6s;
+}
+@keyframes grow {
+  0% { font-size: 30px; }
+  10% { font-size: 40px; }
+  35% { font-size: 40px; }
+  40% { font-size: 30px; }
+}
+a[href] {
+  color: #722172;
+  font-weight: 580;
+  cursor: pointer;
+}
+a[href]:hover {
+  text-decoration: underline;
+}
