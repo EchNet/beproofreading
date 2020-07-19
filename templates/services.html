@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <ol>
+    <li><a href="mailto:{{ EMAIL }}">Contact me</a> to discuss your needs and my availability.</li>
+    <li>(First time only) Complete the <a target="_new" href="{{ CONTACT_FORM }}">Reporter's Preference Form</a>.
+    <li><i>Legal transcripts</i> should be sent in PDF format. (See below for notes on working with PDF.)  I mark in red and highlight in yellow; only annotated pages will be returned.  For large jobs, please consider sending it in 50-page increments.</li>
+    <li><i>General proofreading</i> job parameters will be at the client's discretion.</li>
+    <li>I will email you when I receive the job.</li>
+    <li>The job will be returned by email within the specified time.</li>
+  </ol>
+</section>
+<section>
+  <div class="h3">About PDF Format</div>
+  <div>
+    Converting to PDF is easy with CutePDF Writer. <a target="_new" href="https://www.cutepdf.com/Products/CutePDF/writer.asp">Here is a step-by-step guide.</a>
+  </div>
+  <div>
+    To see all of the corrections, you must open the returned document in the latest version of
+    <a target="_new" href="https://get.adobe.com/reader">Adobe Acrobat</a>.
+    Anything else will not show all corrections.
+  </div>
+</section>
+{% endblock content %}

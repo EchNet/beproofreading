@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>BEproofreading{% if page != "index" %} - {{ page }}{% endif %}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,32 +23,19 @@
   <body>
     <header>
       <div class="h1"><img src="/img/magnifying-glass.png"> <span class="initials">BE</span> Proofreading</div>
-      <div class="h2"><a href="mailto:bonnie@beproofreading.com">bonnie@beproofreading.com</a></div>
+      <div class="h2"><a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></div>
     </header>
     <nav>
-      <a>Home</a> |
-      <a href="/services.html">Services</a> |
-      <a href="/rates.html">Rates</a> |
-      <a href="/about.html">About Me</a>
+      <a{% if page != "index" %} href="/"{% endif %}>Home</a> |
+      <a{% if page != "services" %} href="/services.html"{% endif %}>Services</a> |
+      <a{% if page != "rates" %} href="/rates.html"{% endif %}>Rates</a> |
+      <a{% if page != "about" %} href="/about.html"{% endif %}>About Me</a>
     </nav>
-    <section>
-      <div>
-        <img src="/img/logo.png">
-      </div>
-      <div>
-        <div class="h3">QUALITY & ACCURACY</div>
-        <div class="h4"><li>Legal Transcript Proofreading<br/>for<br/>Court Reporters</li></div>
-        <div class="h4"><li>General Proofreading</li></div>
-      </div>
-    </section>
-    <section>
-      <div class="h3">Welcome to BE Proofreading!</div>
-      <div>Quality work earns you the respect of your clients.
-      Proofreading ensures that you submit the cleanest transcripts, the best copy, and the most readable website.</div>
-      <div>While I’m proofreading, you can focus on other aspects of your business or simply catch up on life.</div>
-    </section>
+    {% block content %}
+    {% endblock content %}
     <footer>
-      Contact me by email at <a href="mailto:bonnie@beproofreading.com">bonnie@beproofreading.com</a>
+      <b>Contact me:</b> <a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a> |
+       <a target="_new" href="{{ LINKEDIN }}">LinkedIn</a>
     </footer>
   </body>
 </html>

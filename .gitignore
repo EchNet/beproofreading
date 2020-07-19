@@ -1,15 +1,6 @@
-# Node/ReactJS
-build/
+__pycache__/
+deploy/
+venv/
 node_modules/
-coverage
-stats.json
-npm-debug.log
-
-# Not sure
-dist/
-.cache/
-
-# Other apps.
 .DS_Store
-.idea
 *.swp
