@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="h1"><img src="/img/magnifying-glass.png"> <span class="initials">BE</span> Proofreading</div>
-      <div class="h2"><a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></div>
+      <div class="h2"><a target="_new" href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></div>
     </header>
     <nav>
       <a{% if page != "index" %} href="/"{% endif %}>Home</a> |
@@ -34,7 +34,7 @@
     {% block content %}
     {% endblock content %}
     <footer>
-      <b>Contact me:</b> <a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a> |
+      <b>Contact me:</b> <a target="_new" href="mailto:{{ EMAIL }}">{{ EMAIL }}</a> |
        <a target="_new" href="{{ LINKEDIN }}">LinkedIn</a>
     </footer>
   </body>
