@@ -2,6 +2,9 @@ html, body, div, section, header, footer, ol, ul, img, table, td, th, tr {
   padding: 0;
   margin: 0;
 }
+img {
+  image-orientation: none;
+}
 body {
   line-height: 1.25;
   position: relative;
