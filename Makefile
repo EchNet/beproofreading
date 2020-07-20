@@ -23,7 +23,7 @@ build: requirements.flag clean
 	$(PYTHON) ./build.py
 
 deploy: build
-	aws s3 --profile beproofreading cp --recursive deploy s3://www.beproofreading.com
+	aws s3 --profile beproofreading cp --recursive deploy s3://beproofreading.com
 
 package-lock.json: package.json
 	$(NPM) install
