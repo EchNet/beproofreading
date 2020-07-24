@@ -22,12 +22,12 @@ a[href]:hover {
 .h1 {
   line-height: 1.1;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 .h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -63,7 +63,7 @@ header img {
 }
 header .h1 .initials {
   font-family: 'Cormorant', Arial, sans-serif;
-  font-size: 72px;
+  font-size: 76px;
 }
 header a[href] {
   color: black;
@@ -154,9 +154,6 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
 }
-th {
-  font-weight: 800;
-}
 td,th {
   text-align: center;
   padding: 4px;
@@ -166,7 +163,7 @@ td,th {
   visibility: hidden;
 }
 b {
-  font-weight: 1000;
+  font-weight: 800;
 }
 img[name="profile"] {
   float: right;

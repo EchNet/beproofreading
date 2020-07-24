@@ -28,9 +28,6 @@ deploy: build
 package-lock.json: package.json
 	$(NPM) install
 
-rrun: package-lock.json
-	./node_modules/.bin/parcel rapp/index.html
-
 run: package-lock.json
 	node server.js
 
