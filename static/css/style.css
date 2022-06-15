@@ -120,6 +120,7 @@ section > div {
   margin: 10px;
 }
 footer {
+  font-size: 18px;
   margin-top: 20px;
   padding: 7px;
   border-top: solid 1px #ddd;
@@ -140,8 +141,8 @@ ol li {
   font-weight: normal;
 }
 .fixed-width {
-  min-width: 160px;
-  max-width: 160px;
+  min-width: 120px;
+  max-width: 120px;
 }
 table:nth-of-type(1) td, table:nth-of-type(1) th, table:nth-of-type(3) td, table:nth-of-type(3) th {
   background-color: #fbf8f3;
@@ -159,14 +160,19 @@ td,th {
   padding: 4px;
   border: solid 1px black;
 }
-.poof {
-  visibility: hidden;
-}
 b {
   font-weight: 700;
 }
 img[name="profile"] {
   float: right;
+  width: 150px;
+  margin: 17px;
+}
+img[name="product1"] {
+  width: 150px;
+  margin: 17px;
+}
+img[name="product2"] {
   width: 150px;
   margin: 17px;
 }

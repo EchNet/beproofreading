@@ -30,4 +30,4 @@ CONTEXT = {
     "https://docs.google.com/forms/d/e/1FAIpQLSeWt0TGAi3Z3rSRsoVVIsNo1mRPYuC24OjJgObbhG-o2J0LCA/viewform",
     "LINKEDIN": "https://www.linkedin.com/in/bonnie-echmalian-804940122/",
 }
-PAGES_TO_RENDER = ("index", "services", "rates", "about")
+PAGES_TO_RENDER = ("index", "services", "rates", "about", "shop")
