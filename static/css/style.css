@@ -168,11 +168,7 @@ img[name="profile"] {
   width: 150px;
   margin: 17px;
 }
-img[name="product1"] {
-  width: 150px;
-  margin: 17px;
-}
-img[name="product2"] {
+img.shop {
   width: 150px;
   margin: 17px;
 }
